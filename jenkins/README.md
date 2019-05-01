@@ -31,7 +31,7 @@ $ cat /var/jenkins_home/secrets/initialAdminPassword
 ```
    * You can copy the password from the output log or from below path
 in the docker "jenkins_master" container.
-   * If you find dificulties to find this secret, then use percy/123.
+   * If you find dificulties to find this secret, then use tester/123.
 
 4. Do not install plugins.
 
@@ -58,6 +58,7 @@ $ docker-compose up --build jenkins_master
 $ docker network create jenkins_network
 ```
 
+
 # Structure
 
 1. ".scripts" : scripts that set up the containers.
@@ -72,8 +73,11 @@ $ docker network create jenkins_network
 
 2. Accounts created by default:
    - admin/xxx, xxx is the default password that requires to be changed.
-   - percy/123 
+   - tester|percy/123 
 
+3. Jenkins DSL
+   You can generate jobs from code by following the steps pointed at:
+   [Jenkins DSL](https://github.com/jenkinsci/job-dsl-plugin/wiki/Tutorial---Using-the-Jenkins-Job-DSL)
 
 
 
