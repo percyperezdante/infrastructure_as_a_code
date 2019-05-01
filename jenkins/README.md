@@ -84,4 +84,5 @@ $ docker network create jenkins_network
 # TODO
 - Configure master with swarm
 - Add credentials to jenkins master
+- Add scripts to use jenkisn-cli.jar
 
