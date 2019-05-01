@@ -45,8 +45,14 @@
       </roles>
       <timestamp>1556663131263</timestamp>
     </jenkins.security.LastGrantedAuthoritiesProperty>
+    <io.jenkins.blueocean.autofavorite.user.FavoritingUserProperty plugin="blueocean-autofavorite@1.2.4">
+      <autofavoriteEnabled>true</autofavoriteEnabled>
+    </io.jenkins.blueocean.autofavorite.user.FavoritingUserProperty>
+    <hudson.plugins.favorite.user.FavoriteUserProperty plugin="favorite@2.3.2">
+      <data class="concurrent-hash-map"/>
+    </hudson.plugins.favorite.user.FavoriteUserProperty>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>#jbcrypt:$2a$10$EXHZcQU..ybq.D2ZcuaPk.tYzXZTah73iscTkC23qVrDj41ShjhZ.</passwordHash>
+      <passwordHash>#jbcrypt:$2a$10$JA/65KC6YDXlOqRHFi9frOX4hlyPg8Ytf6zmkQF3pVfRn.K5DRhy.</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
   </properties>
 </user>
