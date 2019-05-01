@@ -3,6 +3,7 @@
 # Objective
 The code in this folder set ups a Jenkins master/agent infrastructure.
 
+
 # How to run
 
 ## Prerequisites
@@ -23,18 +24,18 @@ $ docker-compose up --build
 ```
 localhost:10011
 ```
-3. Set admmin password by copyng the initial password from:
+3. Set admin password by copyng the initial password from:
 
-You can copy the password from the output log or from below path
-in the docker "jenkins_master" container.
-```
+```bash
 $ cat /var/jenkins_home/secrets/initialAdminPassword
 ```
-If you find dificulties to find this secret, then use percy/123.
+   * You can copy the password from the output log or from below path
+in the docker "jenkins_master" container.
+   * If you find dificulties to find this secret, then use percy/123.
 
 4. Do not install plugins.
 
-All plugins are copied in to /var/jenkins_home/plugins. Therefore
+   * All plugins are copied in to /var/jenkins_home/plugins. Therefore
 you do not need to install them.  In the windows "Customize Jenkins"
 select "Select plugins to install" -> Click on "none" -> click "install"
 
@@ -43,24 +44,25 @@ click "save and finish".
 
 6. Finally, click on "Start using Jenkins"
 
-#NOTE
+
+# NOTE
 1. If you want to just work on Jenkins master
 
-```
+```bash
 $ docker-compose up --build jenkins_master
 
 ```
 2. To create a docker network "jenkins_network"
 
-```
+```bash
 $ docker network create jenkins_network
 ```
 
 # Structure
 
-1 ".scripts" : scripts that set up the containers.
-2 ".confic": configuration files such as dockerfile.
-3 ".shared": shared files and directories with hosted containers.
+1. ".scripts" : scripts that set up the containers.
+2. ".confic": configuration files such as dockerfile.
+3. ".shared": shared files and directories with hosted containers.
 
 # Features
 
