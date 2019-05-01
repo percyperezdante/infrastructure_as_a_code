@@ -1,0 +1,13 @@
+[Unit]
+Description=Jenkins agent service managed by swarm plugin
+After=network.target
+
+[Service]
+Type=simple
+User=jenkins
+WorkingDirectory=/app/jenkins/cli/
+ExecStart=/usr/bin/java -jar swarm-client.jar -master http://jenkins_master:8080/jenkins -labels "'docker'" -executors 1 -username svc_coe_jenkins -password 5776f43bb87b526f31d540a1421b984f -fsroot /app/jenkins/
+
+[Install]
+WantedBy=multi-user.target
+

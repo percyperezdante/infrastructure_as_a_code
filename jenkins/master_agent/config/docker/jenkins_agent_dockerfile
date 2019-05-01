@@ -1,0 +1,3 @@
+FROM ubuntu
+COPY ./scripts/* /tmp/
+ENTRYPOINT ["/tmp/install_common.sh"]

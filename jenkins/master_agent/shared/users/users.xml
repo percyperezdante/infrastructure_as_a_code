@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.model.UserIdMapper>
+  <version>1</version>
+  <idToDirectoryNameMap class="concurrent-hash-map">
+    <entry>
+      <string>admin</string>
+      <string>admin_6007918750116162775</string>
+    </entry>
+    <entry>
+      <string>percy</string>
+      <string>percy_9113443842274490312</string>
+    </entry>
+  </idToDirectoryNameMap>
+</hudson.model.UserIdMapper>

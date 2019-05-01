@@ -1,0 +1,5 @@
+ 20190430 21:09:46,INFO,Start,
+uid=1000(jenkins) gid=1000(jenkins) groups=1000(jenkins)
+-rw-r--r-- 1 root root 1647441 Apr 30 21:09 /app/jenkins/cli/swarm-client.jar
+-rw-r--r-- 1 root root 408 Apr 30 21:09 /etc/systemd/system/jenkins-agent.service
+ 20190430 21:09:49,INFO,End,

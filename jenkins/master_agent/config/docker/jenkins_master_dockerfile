@@ -1,0 +1,4 @@
+FROM jenkinsci/blueocean
+USER root
+COPY --chown=jenkins shared/plugins /var/jenkins_home/plugins
+COPY --chown=jenkins shared/users /var/jenkins_home/users

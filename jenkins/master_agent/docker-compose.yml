@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+    jenkins_master:
+        build:
+            context: .
+            dockerfile: ./config/docker/jenkins_master_dockerfile
+        volumes:
+            - ./shared:/tmp/shared
+        ports:
+            - 10010:50000
+            - 10011:8080
+        networks:
+           - jenkins_network
+             
+    jenkins_agent1:
+         #container_name: agent1
+        build:
+             context: .
+             dockerfile: ./config/docker/jenkins_agent_dockerfile
+        tty: true
+        volumes:
+            - ./shared:/tmp/shared
+        networks:
+            - jenkins_network
+             
+             #volumes:
+             #    jenkins_home:
+             #
+networks:
+    jenkins_network:
+        external: true
+
+
